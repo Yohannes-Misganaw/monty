@@ -1,12 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-typedef struct stack_s
-{
-    int n;
-    struct stack_s *prev;
-    struct stack_s *next;
-} stack_t;
+#include "monty.h"
 
 void push(stack_t **stack, int value)
 {
@@ -49,4 +41,3 @@ int main(void)
 
     return 0;
 }
-
